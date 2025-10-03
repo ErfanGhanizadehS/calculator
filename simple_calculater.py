@@ -11,15 +11,15 @@ def show_menu():
     return choose
 
 
-list_of_ability = []
+list_of_pow = []
 list_of_sum = []
 
 
-def ability_performance():
+def pow_performance():
     number_1 = float(input("Please enter first number:"))
     number_2 = float(input("Please enter second number:"))
     result = number_1 ** number_2
-    list_of_ability.append(result)
+    list_of_pow.append(result)
     print("=" * 70)
     return result
 
@@ -34,20 +34,20 @@ def sum_performance():
 
 
 def show_list():
-    print("your list of ability is:", list_of_ability)
+    print("your list of ability is:", list_of_pow)
     print("your list of sum is:", list_of_sum)
     print("=" * 70)
 
 
 def remove_item():
-    print("1)the list of ability is:", list_of_ability)
+    print("1)the list of ability is:", list_of_pow)
     print("2)the list of sum is:", list_of_sum)
     select = int(input("please input number 1 or 2:"))
 
     if select == 1:
         remove = float(input("please enter the item that you want to remove:"))
-        for remove in list_of_ability:
-            list_of_ability.remove(remove)
+        for remove in list_of_pow:
+            list_of_pow.remove(remove)
             print("Item removed successfully!")
     elif select == 2:
         remove = float(input("please enter the item that you want to remove:"))
@@ -56,4 +56,5 @@ def remove_item():
             print("Item removed successfully!")
     else:
         print("invalid option!!!")
+
     print("=" * 70)
