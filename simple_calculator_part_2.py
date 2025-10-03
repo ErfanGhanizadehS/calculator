@@ -4,7 +4,7 @@ while True:
     first_attempt = show_menu()
 
     if first_attempt == 1:
-        first_performance = ability_performance()
+        first_performance = pow_performance()
         print("Result:", first_performance)
     elif first_attempt == 2:
         second_performance = sum_performance()
@@ -17,4 +17,5 @@ while True:
         print("good bye!")
         break
     else:
+
         print("invalid number!!!")
